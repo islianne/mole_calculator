@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mole & Molar Mass Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Main Calculator Container -->
+    <div class="container">
+      <h1>Mole & Molar Mass Calculator</h1>
+
+      <!-- Input: Chemical Formula -->
+      <label for="formula">Chemical Formula:</label>
+      <input type="text" id="formula" placeholder="e.g., H2O" />
+
+      <!-- Input: Mass -->
+      <label for="mass">Mass (grams):</label>
+      <input type="number" id="mass" placeholder="e.g., 18" />
+
+      <!-- (Optional) Input: Moles -->
+      <label for="moles">Moles:</label>
+      <input type="number" id="moles" placeholder="optional - or use grams" />
+
+      <!-- Calculate Button -->
+      <button onclick="calculate()">Calculate</button>
+
+      <!-- Output -->
+      <div id="results"></div>
+    </div>
+
+  <!-- Script -->
+  <script src="index.js"></script>
+</body>
+</html>

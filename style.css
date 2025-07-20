@@ -1,0 +1,108 @@
+/* Base page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ece9f1; /* Soft purple-blue */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Side layout */
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Side images */
+.side-image {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Main calculator container */
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(100, 100, 150, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  color: #2d2c40; /* Deep gray-blue text */
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #3a3755;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bcbafc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background-color: #6c63ff; /* Indigo-blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #534dd8; /* Deeper shade on hover */
+}
+
+/* Results box */
+#results {
+  margin-top: 25px;
+  font-size: 17px;
+  background-color: #e2e8ff; /* Lavender blue */
+  padding: 15px;
+  border-radius: 8px;
+  color: #2d2c40;
+}
+
+/* Result text */
+#results p {
+  margin: 8px 0;
+  padding: 8px;
+  background: #f5f7ff;
+  border-left: 4px solid #6c63ff;
+  border-radius: 6px;
+}
+
+/* Mobile image size */
+@media (max-width: 600px) {
+  .side-image {
+    width: 50px;
+  }
+}
